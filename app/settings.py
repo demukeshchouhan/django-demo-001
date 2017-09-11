@@ -77,7 +77,7 @@ default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl), }
+    'default': config('DATABASE_URL', default=default_dburl, cast=dburl), 
 }
 
 
